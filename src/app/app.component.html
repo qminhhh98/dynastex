@@ -1,0 +1,12 @@
+<ng-container *ngIf="selectData$ | async as selectData">
+  <h2>Setup Project!</h2>
+
+  <ul>
+    <li *ngFor="let item of selectData">
+      {{item.name}} - {{item.age}}
+    </li>
+  </ul>
+
+  <button (click)="handleAddNew()">Add new</button>
+
+</ng-container>
